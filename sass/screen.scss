@@ -1,0 +1,161 @@
+$textColor: #473313;
+$baseFontFamily: Georgia, "Times New Roman", Times, serif;
+$baseFontSize: 14px;
+$navbarLinkColor: #5d3c15;
+$navbarBackground: #f8ab36;
+$navbarBackgroundHighlight: darken($navbarBackground, 10);
+$navbarLinkColorHover: #5d3c15;
+$navbarLinkColorActive: #FFF;
+$navbarLinkBackgroundHover: #FFF;
+
+
+
+@font-face {
+    font-family: 'UglyQuaRegular';
+    src: url('UglyQua-webfont.eot');
+    src: url('UglyQua-webfont.eot?#iefix') format('embedded-opentype'),
+         url('UglyQua-webfont.woff') format('woff'),
+         url('UglyQua-webfont.ttf') format('truetype'),
+         url('UglyQua-webfont.svg#UglyQuaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UglyQuaItalic';
+    src: url('UglyQua-Italic-webfont.eot');
+    src: url('UglyQua-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('UglyQua-Italic-webfont.woff') format('woff'),
+         url('UglyQua-Italic-webfont.ttf') format('truetype'),
+         url('UglyQua-Italic-webfont.svg#UglyQuaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import "compass/reset";
+@import "compass/utilities";
+@import "blueprint";
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+
+
+body{
+    background-image: image_url("bg.jpg");
+    .container{
+        margin: 20px auto 20px;
+        padding: 20px;
+        background-color: #FFF;
+        max-width: image_width("o_paper.png"); 
+        @include box-shadow(rgba(0,0,0,0.7) 0 0 15px -2px); 
+        .orangeBox{
+            background: #fdbd4e image_url("o_paper.png") 50% 100% no-repeat;
+            overflow: hidden;
+        }
+    }
+}
+
+.header{
+    background: image-url("header.png") 100% 0 no-repeat;
+    background-size: cover;
+    min-height: image-height("header.png");
+    padding: 0 4em 2em ;
+    h1{
+
+        font-family: UglyQuaRegular, $baseFontFamily ;
+        font-size: 70px;
+        text-align: left;
+        position: relative;
+        top: 200px;    }
+    
+}
+
+h1, h2{
+        font-family: UglyQuaRegular, $baseFontFamily ;
+} 
+
+.instagram{
+    overflow: hidden;
+    margin: 2em 0 0;
+    
+    
+    
+    
+}
+.instagram-placeholder{
+    float: left;
+    margin: 1em 1em 0 0; 
+    @include box-shadow();
+    
+    
+    
+}
+
+.rightImage{
+    float: right;
+    padding: 0 0 1em 0;
+    
+    
+}
+
+.bigger{
+    font-size: 120%;   
+    min-width: 20%;   
+}
+
+.full{
+    padding: 1em 4em;
+    
+}
+
+.navbar{
+    .container{
+        padding: 0 4em;
+        margin: 0;
+    }
+    .navbar-inner{
+        background: transparent;
+        
+    }
+    .navbar{
+        margin: 0;
+        
+    }
+    .nav > li > a {
+        text-transform: uppercase;
+        padding: 9px;
+        @include hover-link;
+        
+        
+    }
+    .navbar-inner{
+        padding: 0;
+        
+    }
+
+}
+
+.footer{
+    clear: both;
+    padding: 4em;
+    overflow: hidden;
+    .addthis_toolbox{
+        padding: 20px 0 0 0;
+        float: right;        
+    }
+    .left{
+        float: left;
+        
+    }
+    
+}
+
+
+.full{
+    display: none;
+    &#Page_0{
+        display: block;
+        
+    }
+}
