@@ -67,7 +67,7 @@ body{
         font-size: 70px;
         text-align: left;
         position: relative;
-        top: 200px;    }
+        top: 190px;    }
 }
 
 h1, h2{
@@ -77,6 +77,18 @@ h1, h2{
         
         
 } 
+
+h2{
+    color: #FFF;
+    font-size: 32px;
+}
+
+h4{
+    margin: 2px 0;
+    
+}
+
+
 
 .instagram{
     overflow: hidden;
@@ -109,6 +121,11 @@ h1, h2{
 
 .full{
     padding: 1em 4em;
+    ul{
+        @include no-bullets();
+        margin: 2px;
+        
+    }
     
 }
 

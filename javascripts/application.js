@@ -16,13 +16,27 @@
 
 
          $(".instagram").each(function() {
-              $(this).instagram({
-             hash: $(this).attr("data-tag")
-           , clientId: '10f26d8edde44fb4be7c1a0f857265e5'
-           ,  show : 100
+             $(this).instagram({
+                 hash: $(this).attr("data-tag")
+               , clientId: '10f26d8edde44fb4be7c1a0f857265e5'
+               ,  show : 20
+             });
          });
-         });
+     $('.instagram-placeholder a').fancybox({
+				 prevEffect : 'none',
+				 nextEffect : 'none',
 
+				 closeBtn  : false,
+				 arrows    : false,
+				 nextClick : true,
+
+				 helpers : {
+					   thumbs : {
+						     width  : 50,
+						     height : 50
+					   }
+				 }
+		 });
      })
 
 

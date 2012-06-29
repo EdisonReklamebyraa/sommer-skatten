@@ -20,18 +20,23 @@
     options && $.extend(settings, options);
 
     function createPhotoElement(photo) {
+        console.log(photo);
       return $('<div>')
         .addClass('instagram-placeholder')
         .attr('id', photo.id)
         .append(
           $('<a>')
+            .attr("data-fancybox-group", settings.hash)
             .attr('target', '_blank')
-            .attr('href', photo.link)
+            .attr('title', photo.caption.text)
+            .attr('href', photo.images.standard_resolution.url)
             .append(
               $('<img>')
                 .addClass('instagram-image')
                 .attr('src', photo.images.thumbnail.url)
+
             )
+
         );
     }
 
@@ -78,7 +83,7 @@
       settings.maxId != null && (params.max_id = settings.maxId);
 
       url += "?" + $.param(params)
-
+        console.log(url);
       return url;
     }
 

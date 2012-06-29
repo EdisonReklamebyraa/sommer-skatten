@@ -6565,7 +6565,7 @@ body .container .orangeBox {
   font-size: 70px;
   text-align: left;
   position: relative;
-  top: 200px;
+  top: 190px;
 }
 
 /* line 73, ../sass/screen.scss */
@@ -6576,12 +6576,23 @@ h1, h2 {
 }
 
 /* line 81, ../sass/screen.scss */
+h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+/* line 86, ../sass/screen.scss */
+h4 {
+  margin: 2px 0;
+}
+
+/* line 93, ../sass/screen.scss */
 .instagram {
   overflow: hidden;
   margin: 2em 0 0;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .instagram-placeholder {
   float: left;
   margin: 1em 1em 0 0;
@@ -6590,37 +6601,48 @@ h1, h2 {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .rightImage {
   float: right;
   padding: 0 0 1em 0;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .bigger {
   font-size: 120%;
   min-width: 20%;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .full {
   padding: 1em 4em;
 }
+/* line 124, ../sass/screen.scss */
+.full ul {
+  list-style: none;
+  margin: 2px;
+}
+/* line 11, ../../../../../Users/mario/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+.full ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
 
-/* line 116, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .navbar .container {
   padding: 0 4em;
   margin: 0;
 }
-/* line 120, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .navbar .navbar-inner {
   background: transparent;
 }
-/* line 124, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .navbar .navbar {
   margin: 0;
 }
-/* line 128, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .navbar .nav > li > a {
   text-transform: uppercase;
   padding: 9px;
@@ -6630,32 +6652,32 @@ h1, h2 {
 .navbar .nav > li > a:hover {
   text-decoration: underline;
 }
-/* line 135, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .navbar .navbar-inner {
   padding: 0;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .footer {
   clear: both;
   padding: 4em;
   overflow: hidden;
 }
-/* line 146, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .footer .addthis_toolbox {
   padding: 20px 0 0 0;
   float: right;
 }
-/* line 150, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .footer .left {
   float: left;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .full {
   display: none;
 }
-/* line 160, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .full#Page_0 {
   display: block;
 }
