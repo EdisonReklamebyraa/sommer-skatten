@@ -12,6 +12,7 @@
           , show: null
           , onLoad: null
           , onComplete: null
+          , onEmpty: null
           , maxId: null
           , minId: null
           , next_url: null
@@ -20,15 +21,14 @@
     options && $.extend(settings, options);
 
     function createPhotoElement(photo) {
-        console.log(photo);
       return $('<div>')
         .addClass('instagram-placeholder')
         .attr('id', photo.id)
         .append(
           $('<a>')
-            .attr("data-fancybox-group", settings.hash)
+            .attr("data-fancybox-group", "insta")
             .attr('target', '_blank')
-            .attr('title', photo.caption.text)
+            .attr('title', (photo.caption)?photo.caption.text:"")
             .attr('href', photo.images.standard_resolution.url)
             .append(
               $('<img>')
@@ -41,10 +41,8 @@
     }
 
     function createEmptyElement() {
-      return $('<div>')
-        .addClass('instagram-placeholder')
-        .attr('id', 'empty')
-        .append($('<p>').html('No photos for this query'));
+      if(settings.onEmpty)
+        settings.onEmpty();
     }
 
     function composeRequestURL() {
@@ -83,7 +81,7 @@
       settings.maxId != null && (params.max_id = settings.maxId);
 
       url += "?" + $.param(params)
-        console.log(url);
+
       return url;
     }
 
