@@ -21,7 +21,7 @@
              var callback = function (photos, data) {
                  max++;
                  var insta_next_url = data.pagination.next_url;
-                 if(max < 5){
+                 if(max < 10){
                      self.instagram({
                          next_url : insta_next_url
                        , show : 4
