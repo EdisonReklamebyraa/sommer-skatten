@@ -19,7 +19,7 @@
               $(this).instagram({
              hash: $(this).attr("data-tag")
            , clientId: '10f26d8edde44fb4be7c1a0f857265e5'
-           ,  show : 4
+           ,  show : 100
          });
          });
 

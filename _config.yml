@@ -1,4 +1,1 @@
-paginate: 5
-pygments: true
-markdown: rdiscount
 permalink: /:title/
