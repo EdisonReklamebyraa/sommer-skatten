@@ -1927,7 +1927,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("../images/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -1939,7 +1939,7 @@ table .span24 {
 
 /* line 30, ../../../../../Users/mario/.rvm/gems/ruby-1.8.7-p352/gems/compass_twitter_bootstrap-2.0.3/stylesheets/compass_twitter_bootstrap/_sprites.scss */
 .icon-white {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("../images/glyphicons-halflings-white.png");
 }
 
 /* line 34, ../../../../../Users/mario/.rvm/gems/ruby-1.8.7-p352/gems/compass_twitter_bootstrap-2.0.3/stylesheets/compass_twitter_bootstrap/_sprites.scss */
@@ -6532,11 +6532,11 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 body {
   background-image: url('../images/bg.jpg?1340718746');
 }
-/* line 46, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body .container {
   margin: 20px auto 20px;
   padding: 20px;
@@ -6546,20 +6546,20 @@ body .container {
   -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 0 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.7) 0 0 15px -2px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 body .container .orangeBox {
-  background: #fdbd4e url('../images/o_paper.png?1340871376') 50% 100% no-repeat;
+  background: #fdb73b url('../images/o_paper.png?1341226669') 50% 100% no-repeat;
   overflow: hidden;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .header {
-  background: url('../images/header.png?1340870618') 100% 0 no-repeat;
+  background: url('../images/header.png?1341226587') 100% 0 no-repeat;
   background-size: cover;
   min-height: 265px;
   padding: 0 4em 2em;
 }
-/* line 64, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .header h1 {
   font-family: UglyQuaRegular, Georgia, "Times New Roman", Times, serif;
   font-size: 70px;
@@ -6568,37 +6568,38 @@ body .container .orangeBox {
   top: 190px;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 h1, h2 {
   font-family: UglyQuaRegular, Georgia, "Times New Roman", Times, serif;
   line-height: 1.2em;
   margin-bottom: 0.5em;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 h2 {
   color: #FFF;
   font-size: 32px;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 h4 {
   margin: 2px 0;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .instagram {
   overflow: hidden;
   margin: 2em 0 0;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .instagram-placeholder {
   float: left;
   margin: 1em 1em 0 0;
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
+  max-width: 45%;
 }
 
 /* line 110, ../sass/screen.scss */
@@ -6680,4 +6681,71 @@ h4 {
 /* line 177, ../sass/screen.scss */
 .full#Page_0 {
   display: block;
+}
+
+/* line 182, ../sass/screen.scss */
+p.center {
+  text-align: center;
+  clear: bo;
+}
+
+/* line 188, ../sass/screen.scss */
+.btn.more {
+  width: 20%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+@media (max-width: 979px) {
+  /* line 205, ../sass/screen.scss */
+  .header h1 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 213, ../sass/screen.scss */
+  body {
+    padding: 0;
+  }
+
+  /* line 216, ../sass/screen.scss */
+  .bigger {
+    clear: both;
+  }
+
+  /* line 221, ../sass/screen.scss */
+  .header h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 235, ../sass/screen.scss */
+  .header {
+    padding: 0 1em 1em;
+  }
+  /* line 237, ../sass/screen.scss */
+  .header h1 {
+    font-size: 45px;
+  }
+
+  /* line 242, ../sass/screen.scss */
+  .full {
+    padding: 0 1em 1em;
+  }
+
+  /* line 245, ../sass/screen.scss */
+  h2 {
+    clear: both;
+  }
+
+  /* line 249, ../sass/screen.scss */
+  .navbar .container {
+    padding: 0 1em 0;
+  }
+
+  /* line 252, ../sass/screen.scss */
+  body .container {
+    padding: 1em 1em;
+    margin: 0 auto;
+  }
 }

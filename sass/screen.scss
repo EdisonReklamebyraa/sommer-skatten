@@ -7,6 +7,8 @@ $navbarBackgroundHighlight: darken($navbarBackground, 10);
 $navbarLinkColorHover: #5d3c15;
 $navbarLinkColorActive: #FFF;
 $navbarLinkBackgroundHover: #FFF;
+$iconSpritePath:          "../images/glyphicons-halflings.png" !default;
+$iconWhiteSpritePath:     "../images/glyphicons-halflings-white.png" !default;
 
 
 
@@ -50,7 +52,7 @@ body{
         max-width: image_width("o_paper.png"); 
         @include box-shadow(rgba(0,0,0,0.7) 0 0 15px -2px); 
         .orangeBox{
-            background: #fdbd4e image_url("o_paper.png") 50% 100% no-repeat;
+            background: #fdb73b image_url("o_paper.png") 50% 100% no-repeat;
             overflow: hidden;
         }
     }
@@ -102,9 +104,7 @@ h4{
     float: left;
     margin: 1em 1em 0 0; 
     @include box-shadow();
-    
-    
-    
+    max-width: 45%;
 }
 
 .rightImage{
@@ -177,5 +177,80 @@ h4{
     &#Page_0{
         display: block;
         
+    }
+}
+p.center{
+    text-align: center;
+    clear: bo
+    
+
+}
+.btn.more{
+    width: 20%;
+    margin: 1em auto;
+    text-align: center;
+    
+    
+}
+
+
+@media (min-width: 1200px) { 
+
+
+}
+
+@media (max-width: 979px) {
+   
+    .header{
+        h1{
+            font-size: 58px;
+
+        }
+    } 
+}
+
+@media (max-width: 767px) {
+    body{
+        padding: 0;
+    }
+    .bigger{
+        clear: both;
+        
+    }
+    .header{
+        h1{
+            font-size: 50px;
+
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+}
+
+@media (max-width: 480px) {
+    .header{
+        padding: 0 1em 1em;
+        h1{
+            font-size: 45px;
+
+        }
+    }
+    .full{
+        padding: 0 1em 1em;        
+    }
+    h2{
+        clear: both;
+        
+    }
+    .navbar .container{
+        padding: 0 1em 0;
+    }
+    body .container {
+        padding: 1em 1em;
+        margin: 0 auto;
     }
 }
